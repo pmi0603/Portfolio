@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+}
+
+#navbar {
+    background-color: #181818;
+    height: 3em;
+    padding-top: 2em;
+    box-shadow: 0px 3px 5em rgb(15, 15, 15);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+}
+
+#navbar ul li {
+    margin-left: 20px;
+}
+
+#navbar ul li a {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: letter-spacing 0.9s;
+}
+
+#navbar ul li a:hover {
+    color: cornflowerblue;
+    letter-spacing: 0.2em;
+}
+
+#heading {
+    margin-top: 5%;
+    width: 74.5%;
+    height: 20em;
+    background-color: #8758FF;
+    padding: 9em 12em;
+}
+
+#heading h1 {
+    font-size: 5em;
+}
+
+#heading h4 {
+    font-size: 3em;
+}
+
+#aboutme {
+    width: 139px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    outline: none;
+    background-color: #5CB8E4;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#intro {
+    background-color: #FFFED3;
+    padding: 6em 9em;
+    font-size: 1.5em;
+}
+
+#intro h3 {
+    font-weight: bold;
+}
+
+#intro b {
+    font-weight: 400;
+}
+
+#phone {
+    margin-left: 0.4em;
+}
+
+#mail {
+    margin-left: 0.4em;
+}
+
+#resume {
+    margin-left: 0.4em;
+}
+
+#resume:hover {
+    cursor: pointer;
+}
+
+.skill-container {
+    background-color: #d7eaf3;
+    padding: 3.2em;
+    height: 35em;
+}
+
+.skill-img {
+    width: 6em;
+    height: 5em;
+    margin: 0em;
+    padding: 2em;
+    margin-left: 8em;
+    transition: 0.9s;
+}
+
+.skill-img:hover {
+    box-shadow: 0px 3px 9px #020202;
+    border-style: none;
+    outline: none;
+}
+
+#social {
+    padding: 2em;
+}
+
+#social_heading {
+    font-size: 3em;
+}
+
+.social_icon {
+    font-size:4em;
+    margin-left: 1em;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(to right, rgb(231, 107, 151),rgb(253, 60, 124), rgb(244, 248, 29));
+    padding: 1.5em;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+
+}
+
+.fa-github {
+    background-color: black;
+    padding: 1.5em;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+.fa:hover{
+    box-shadow: 0px 3px 15px grey;
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    transform: translateX(10px);
+}
