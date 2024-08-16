@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     color: black;
 }
@@ -227,7 +227,7 @@ overflow: hidden;
 
 
 .skill-container {
-    background-color: #d7eaf3;
+    background-color: #000000;
     padding: 0.2em;
     height: 48.2em;
 }
@@ -238,13 +238,14 @@ overflow: hidden;
     margin: 1em;
     padding: 2em;
     margin-left: 8em;
-    transition: 0.9s;
+    transition: 0.5s;
 }
 
 .skill-img:hover {
-    box-shadow: 0px 3px 9px #020202;
+    /* box-shadow: 0px 3px 9px #f3e2e2; */
     border-style: none;
     outline: none;
+    transform: scale(1.1);
 }
 
 #social {

@@ -35,7 +35,7 @@ function About() {
         {/* <FontAwesomeIcon icon={faFilePdf} /> */}
       <div id="resume">
         <i class="fa-solid fa-download" id="resume_icon"></i>
-        <a href="PrashantMishra.pdf"  download="PrashantMishra.pdf">Resume</a>
+        <a href="/PrashantMishra.pdf"  download="PrashantMishra.pdf">Resume</a>
     </div>
     
 </div>
