@@ -53,6 +53,65 @@
     
 }
 
+/* #heading-content {
+    transition: all 3s ease-in-out;
+}
+
+#heading-content:hover {
+    box-shadow: 0px 0px 15px 5px rgba(173, 216, 230, 0.8);
+    transform: translateX(20px); 
+    text-align: right; 
+} */
+/* Container for heading content and image */
+/* Container for heading content and image */
+#heading-container {
+    position: relative;
+    overflow: hidden;
+}
+
+#heading-content {
+    transition: all 3s ease-in-out;
+    padding-left: 0; /* Initial padding */
+    margin-left: 0;  /* Initial margin */
+}
+
+#heading-content:hover {
+    padding-left: 20%; /* Create moving effect */
+    margin-left: 10%;
+    text-align: right;
+}
+
+/* Circular image */
+#picture {
+    width: 15em; /* Adjust width for circular dimension */
+    height: 15em; /* Equal height for circular shape */
+    border-radius: 50%; /* Make the image circular */
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%) scale(0); /* Initially scaled down */
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+    opacity: 0; /* Fully transparent initially */
+    z-index: -1; /* Place behind the heading content */
+}
+
+/* When hovering over the heading content */
+#heading-content:hover + #picture {
+    transform: translate(-50%, -50%) scale(1); /* Scale to full size */
+    opacity: 1; /* Make the picture visible */
+    z-index: 1; /* Bring it above the heading content */
+}
+
+/* Reset when not hovering */
+#heading-content:not(:hover) + #picture {
+    transform: translate(-50%, -50%) scale(0); /* Scale down again */
+    opacity: 0; /* Fully transparent */
+    z-index: -1; /* Move behind content */
+}
+
+
+
+
 #heading h1 {
     font-size: 5em;
     background: linear-gradient(to right, #f32170,#ff6b08,#cf23cf,#eedd44);
@@ -225,27 +284,43 @@ overflow: hidden;
 }
 
 
-
 .skill-container {
     background-color: #000000;
     padding: 0.2em;
     height: 48.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    text-align: center;
+    margin: 1em;
+    position: relative;
 }
 
 .skill-img {
     width: 10em;
     height: 10em;
-    margin: 1em;
-    padding: 2em;
-    margin-left: 8em;
+    margin-bottom: 1em;
     transition: 0.5s;
+    padding: 2em;
 }
 
 .skill-img:hover {
-    /* box-shadow: 0px 3px 9px #f3e2e2; */
-    border-style: none;
-    outline: none;
     transform: scale(1.1);
+}
+
+.skill-name {
+    font-size: 1.2em;
+    color: rgba(230, 77, 57, 0.835);
+    margin-top: 0.5em;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.skill-item:hover .skill-name {
+    opacity: 1;
 }
 
 #social {
@@ -282,6 +357,7 @@ overflow: hidden;
 
 #instagram_icon:hover, #github_icon:hover {
     box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
 }
 
 
