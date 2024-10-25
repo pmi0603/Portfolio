@@ -23,7 +23,7 @@ function Home() {
             <h1>Hi, {greeting}<br /> I am Prashant Mishra</h1>
             <h4>Computer Science Graduate</h4>
           </div>
-         <img src={`${process.env.PUBLIC_URL}/assets/images/selfimg.jpg`} alt="pic" />
+         <img src={"/images/selfimg.jpg"} alt="pic" />
          </div>   
         </div>
     );
