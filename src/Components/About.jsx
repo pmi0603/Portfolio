@@ -40,7 +40,7 @@ function About() {
         {/* <FontAwesomeIcon icon={faFilePdf} /> */}
       <div id="resume">
         <i class="fa-solid fa-download" id="resume_icon"></i>
-        <a href={`${process.env.PUBLIC_URL}/assets/PrashantMishra.pdf`} download>Resume</a>
+        <a href={"/images/PrashantMishra.pdf"} download>Resume</a>
     </div>
     
 </div>
